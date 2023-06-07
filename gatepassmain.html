@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATEPASS</title>
+</head>
+<style>
+    /* *{
+        /* margin: 0; */
+        /* box-sizing: border-box; */
+     */
+    body{
+        /* font: 3rem; */
+        
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .main{
+        font-size: 1.2rem;
+        border: 2px solid;
+        height:max-content;
+        background-color: rgb(180, 201, 210);
+    }
+.undermain{
+        display: flex;
+        /* border: 2px solid; */
+        height: 2rem;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .submit{
+    align-content: center;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    }
+    .sidediv{
+        /* border: solid; */
+        width: 20rem;
+    }
+    .apply{
+        font-size: 3.5rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+</style>
+<body>
+    <div class="main">
+<form>
+    <caption class="apply">APPLY FOR GATE PASS:</caption>
+    <div class="undermain">
+        <div class="sidediv">
+<label for="select type:">SELECT TYPE:</label>
+<select name="select type" id="id" required>
+    <!-- <option value="select group">select</option> -->
+    <option value="LEAVE">LEAVE</option>
+    <option value="GATE PASS">GATE PASS</option>
+</select>
+</div>
+<div class="sidediv">
+<label for="reason">REASON:</label>
+<select name="reason" id="id" required>
+    <!-- <option value="select group">select</option> -->
+    <option value="select">select</option>
+    <option value="relative">Relative meeting</option>
+    <option value="shopping">Shopping</option>
+    <option value="college">College/coching</option>
+    <option value="medical">Medical</option>
+    <option value="saloon">Saloon</option>
+    <option value="exam">Exam</option>
+    <option value="other">Other</option>
+</select><br>
+</div>
+</div>
+
+<div class="undermain">
+    <div class="sidediv">
+<label for="start-date">START-DATE:</label>
+<input type="date" name="date" required>
+<BR>
+</div>
+<div class="sidediv">
+<label for="end-date">END-DATE</label>
+<input type="date" name="date" required>
+</div>
+</div>
+<div class="undermain">
+ <div class="sidediv">  
+<label for="intime">IN-TIME:</label>
+<input type="time" NAME="intime" required>
+</div>
+<div class="sidediv">
+<label for="outtime">OUT-TIME:</label>
+<input type="time" NAME="outtime" required><br>
+</div>
+</div>
+<div class="undermain">
+<label for="outtime">ATTACHMENT(MAX:2 MB):</label><BR>
+<input type="file" name="attechment" required>
+</div>
+<div class="submit">
+    <input  type="submit" value="submit" required >
+</div>
+</form>
+</div>
+</body>
+</html>

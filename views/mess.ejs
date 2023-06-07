@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <!-- link css  -->
+    <link rel="stylesheet" href="style/s-dashboard.css">
+
+    <!-- link boxicon  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        html,
+        body {
+            /* display: grid; */
+            place-items: center;
+        }
+        label{
+            margin: 0px 3px ;
+        }
+        input{
+            margin-right: 10px;
+        }
+        .hostel-title{
+            width: 100%;
+        }
+
+        .container-details{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* height: calc(100vh - 80.5px) !important; */
+           
+        }
+        .container-details-inner{
+            width: 50%;
+            background-color:#ecf9ffe6;
+            box-shadow: 0px 0px 10px 3px rgba(119, 140, 156, 0.909);
+            padding: 0 30px 30px;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo-img{
+            width: 200px;
+            margin: auto;
+            /* margin-left: 90px; */
+            /* border: 1px solid black; */
+        }
+        .logo-img img{
+            width: 100%;
+        }
+        .mess-menu-btn{
+            padding: 0.5rem 1rem;
+            margin: -30px 0 20px;
+            margin-top: -30px;
+            background-color:#ebf1fa ;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        .consent-tital{
+            padding: 10px 0;
+            width: max-content;
+            margin-top: -60px;
+            margin-bottom: 30px;
+            font-weight: 400;
+            border-bottom: 1px solid black;
+        }
+        .food{
+            margin-bottom: 20px;
+        }
+        .food h3{
+            margin: 0 0 8px 0;
+        }
+        .sub-btn{
+            width: 100%;
+            font-size: 18px;
+            margin: auto;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            background-image: linear-gradient(to right,#141e30e3,#243B55e3);
+            border: none;
+    outline: none;
+    color: aliceblue;
+   
+        }
+        .sub-btn:hover{
+            background-image: linear-gradient(to right,#141E30,#243B55);
+    box-shadow: 1px 1px 8px 1.5px rgba(167, 166, 166, 0.848);
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="header">
+        <h2 class="hostel-title" >Hostel Managemant System</h2>
+
+        <i class="fa-solid fa-bars " id="ham-menu"></i>
+        <ul id="nav-bar-links">
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Atendence</a>
+            </li>
+            <li>
+                <a href="#">Check-in-out</a>
+            </li>
+            <li>
+                <a href="#">Fees Payment</a>
+            </li>
+            <li>
+                <a href="#">Mess Menu</a>
+            </li>
+            <li>
+                <a href="#">Complaints</a>
+            </li>
+            <li>
+                <a href="#">Change Password</a>
+            </li>
+            <li>
+                <a href="#">Log out</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-main">
+
+        <div class="container-nav">
+
+
+            <ul class="login-link">
+               
+                <li>Check-in out</li>
+                <li>Fees payment</li>
+               <a href="/mess"><li>Mess menu</li></a> 
+               <a href="/complaint"><li>Complaint</li></a> 
+               <a href="/changepwd"><li>Change Password</li></a> 
+                <a href="/"><li>Log out</li></a>
+            </ul>
+        </div>
+
+        <div class="container-details">
+            <div class="container-details-inner">
+
+           
+            <form action="/mess">
+                <div class="logo-img">
+                    <img src="image/homestay-text.png" alt="">
+                </div>
+
+                <h2 class="consent-tital">Give Your Tommorow's Consent</h2>
+                <div class="mess-menu">
+                   <a href="https://drive.google.com/file/d/1fyin4oeoWoPI0LqXjw4J8YbY1Kb4BitX/view" download=""><button class="mess-menu-btn">Mess Menu</button></a>
+                </div>
+               
+                <div class="food">
+                    <h3>Brackfast</h3>
+                    <label for="b-yes">Yes</label>
+                    <input type="radio" value="yes" id="b-yes" name="brackfast">
+                    <label for="b-no">No</label>
+                    <input type="radio" value="no" id="b-no" name="brackfast">
+                </div>
+
+                <div class="food">
+                    <h3>Lunch</h3>
+                    <label for="b-yes">Yes</label>
+                    <input type="radio" value="yes" id="b-yes" name="lunch">
+                    <label for="b-no">No</label>
+                    <input type="radio" value="no" id="b-no" name="lunch">
+                </div>
+
+                <div class="food">
+                    <h3>Dinner</h3>
+                    <label for="b-yes">Yes</label>
+                    <input type="radio" value="yes" id="b-yes" name="dinner">
+                    <label for="b-no">No</label>
+                    <input type="radio" value="no" id="b-no" name="dinner">
+                </div>
+
+                <button type="submit" class="sub-btn">Submit</button>
+            </form>
+
+
+        </div>
+
+        </div>
+
+        <script>
+            document.querySelector(".pay-btn").addEventListener("click", function () {
+                alert("Your Fees Has Been Payed Successfully")
+
+            });
+
+            // nav bar script 
+            let hamMenuIcon = document.getElementById("ham-menu");
+            let navBar = document.getElementById("nav-bar-links");
+            let navLinks = navBar.querySelectorAll("li");
+
+            hamMenuIcon.addEventListener("click", () => {
+                navBar.classList.toggle("active");
+                hamMenuIcon.classList.toggle("fa-times");
+            });
+            navLinks.forEach((navLinks) => {
+                navLinks.addEventListener("click", () => {
+                    navBar.classList.remove("active");
+                    hamMenuIcon.classList.toggle("fa-times");
+                });
+            });
+
+
+        </script>
+</body>
+
+</html>

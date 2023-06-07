@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/s-dashboard.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Fredoka&family=Kaushan+Script&family=Merriweather&family=Montserrat&family=Noto+Serif:ital@1&family=Outfit&family=Poppins&family=Sacramento&display=swap');
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        font-family: 'Outfit', sans-serif;
+    }
+    .getpass-entry{
+        padding: 2rem;
+        background-color:#ebf1fa ;
+      
+    }
+    #entry-table{
+       /* padding: 1rem; */
+    width: 80%;
+
+       /* background-color: aqua; */
+    }
+    BODY{
+        font-size: 17PX;
+    }
+    #heading{
+        background-color: rgb(153, 173, 173);
+        
+    }
+    th,td{
+        padding: 0.4rem;
+    }
+    .container-details{
+        height: calc(100vh - 81.5px);
+    }
+    td{
+        background-color: rgb(220, 242, 242);
+    }
+    
+</style>
+<body>
+
+<div class="header">
+    <h2 class="hostel-title">Hostel Managemant System</h2>
+
+    <i class="fa-solid fa-bars " id="ham-menu"></i>
+    <ul id="nav-bar-links">
+        <li>
+            <a href="#">Admin</a>
+        </li>
+        <li>
+            <a href="#">student-details</a>
+        </li>
+        <li>
+            <a href="#">Student Atendence</a>
+        </li>
+        <li>
+            <a href="#">Student Check details</a>
+        </li>
+        <li>
+            <a href="#">Fees Report</a>
+        </li>
+        <li>
+            <a href="#">Mess Details</a>
+        </li>
+        <li>
+            <a href="#">Complaints</a>
+        </li>
+        <li>
+            <a href="#">Change Password</a>
+        </li>
+        <li>
+            <a href="#">Log out</a>
+        </li>
+    </ul>
+</div>
+
+<div class="container-main">
+
+    <div class="container-nav">
+
+
+        <ul class="login-link">
+            <li>Student-details</li>
+            <li>Student Atendence</li>
+            <li>Student Check details</li>
+            <li>Fees Report</li>
+            <a href="/mess">
+                <li>Mess Details</li>
+            </a>
+            <a href="/complaint">
+                <li>Complaints</li>
+            </a>
+            <a href="/changepwd">
+                <li>Change Password</li>
+            </a>
+            <a href="/index">
+                <li>Log out</li>
+            </a>
+        </ul>
+    </div>
+    <div class="container-details">
+
+        <div class="admin-photo-details">
+
+
+            <div class="dev-text-img">
+                <div class="dashboard_name">
+                    <h2>
+                        <i class="fa-solid fa-house"></i>
+                        Admin
+                    </h2>
+                </div>
+
+
+
+            </div>
+
+    <div class="getpass-entry">
+        <form action="/gatepass" method="post">
+    <table  cellspacing="2" id="entry-table">
+        <h2>GATE-PASS DETAILS:</h2>
+        <tr ID="heading">
+            <th>USERNAME</th>
+            <th>TYPE</th>
+            <th>START-DATE</th>
+            <th>END-DATE</th>
+            <th>OUT-TIME</th>
+            <th>IN-TIME</th>
+            
+        </tr>
+       
+        
+        <% Object.keys(posts).forEach((i)=>{ %>
+
+            
+            <tr>
+                <td><%=posts[i].username%></td>
+                <td><%=posts[i].type%></td>
+                <td><%=posts[i].Sdate%></td>
+                <td><%=posts[i].Edate%></td>
+                <td><%=posts[i].inTime%></td>
+                <td><%=posts[i].outTime%></td>
+    
+            </tr>
+            
+            <% }) %>
+        
+    </table>
+</form>
+</div>
+</body>
+</html>

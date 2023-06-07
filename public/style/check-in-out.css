@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Fredoka&family=Kaushan+Script&family=Merriweather&family=Montserrat&family=Noto+Serif:ital@1&family=Outfit&family=Poppins&family=Sacramento&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif; 
+}
+/* font-family: 'Fredoka', sans-serif;
+ font-family: 'DM Sans', sans-serif; 
+font-family: 'Kaushan Script', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Noto Serif', serif;
+}*/
+body{
+    height: 100vh ;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.header{
+   
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1.2em;
+   background-color: #2E3840;
+    color: aliceblue;
+    
+}
+
+
+.container{
+    display: flex;
+  
+}
+.container-nav{
+  
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    background-color: #162735;
+    /* height: calc(100vh - 6rem); */
+    color: aliceblue;
+}
+.login-link{
+    list-style: none;
+    line-height:1.8rem;
+
+}
+.login-link li{
+    border-radius: 4px;
+    padding: 0 10px ;
+    margin: 5pxv;
+}
+.login-link li:hover{
+    background-color:#213a4fc8;
+    cursor: pointer;
+}
+.login-link li i {
+    padding: 10px;
+}
+.container-form{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    /* justify-content: space-around; */
+    align-items: center;
+    background-color:#ebf1fa ;
+    width: calc(100vw - 14rem);
+    height: calc(100vh - 81.5px);
+    /* border: 1px solid black; */
+}
+      
+.container-form-inner{
+    width: 80%;
+    /* border: 1px solid black; */
+    padding: 15px;
+    background-color:#ecf9ffe6;
+    box-shadow: 0px 0px 10px 3px rgba(119, 140, 156, 0.909);
+}
+.apply{
+    border-bottom: 1px solid black;
+    width: max-content;
+    margin-bottom: 30px;
+}
+.undermain {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;align-items: center;
+    margin: 10px 0;
+}
+.sidediv {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+select,option{
+    width: 40% !important;
+}
+.sidediv input{
+    width: 40% !important;
+}
+label{
+    width: 30%;
+}
+
+.submit-btn{
+    /* width: 80%; */
+    padding: 0.4rem 0.7rem;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color:#ebf1fa ;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    
+ background-image: linear-gradient(to right,#141e30e3,#243B55e3);
+   
+}
+.submit-btn:hover{
+    background-image: linear-gradient(to right,#141E30,#243B55);
+    box-shadow: 1px 1px 8px 1.5px rgba(167, 166, 166, 0.848);
+   
+}
+

@@ -1,0 +1,63 @@
+<%- include("partials/header"); -%>
+<div class="header">
+  <a href="/"><h2 class="hostel-title">Hostel Managemant System</h2></a>
+</div>
+
+<div class="container">
+  <div class="container-nav">
+    <ul class="login-link">
+      <li>
+        <i class="bx bx-user-plus"></i
+        ><a href="/register">Register as student</a>
+      </li>
+      <li>
+        <i class="bx bx-group"></i><a href="/Student">Login as student</a>
+      </li>
+      <li><i class="bx bxs-user"></i><a href="/Admin">Login as admin</a></li>
+    </ul>
+  </div>
+  <div class="container-form">
+    <div class="student-login-form login-form">
+      <div class="login-img">
+        <img src="image/login.png" alt="" />
+      </div>
+      <div class="form-data">
+        <h3><%=users%> Login</h3>
+        <form action="/<%=users%>" method="post">
+          <input
+            class="input-name"
+            type="text"
+            name="username"
+            placeholder="&#xF007; Enter Username"
+            required
+            autocomplete="off"
+            autofocus
+            style="font-family: Arial, 'Font Awesome 5 Free'"
+          />
+
+          <input
+            class="input-name"
+            type="email"
+            name="email"
+            placeholder="&#xf0e0; Enter Email"
+            required
+            autocomplete="off"
+            style="font-family: Arial, 'Font Awesome 5 Free'"
+          />
+
+          <input
+            class="input-name"
+            type="password"
+            name="password"
+            placeholder="&#xF084; Enter password"
+            autocomplete="off"
+            style="font-family: Arial, 'Font Awesome 5 Free'"
+          />
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include("partials/footer"); -%>

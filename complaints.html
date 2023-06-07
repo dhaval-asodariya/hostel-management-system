@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <!-- link css  -->
+    <link rel="stylesheet" href="style/s-dashboard.css">
+
+    <!-- link boxicon  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=DM+Sans&family=Dancing+Script:wght@500&family=Fredoka&family=Kaushan+Script&family=Merriweather&family=Montserrat&family=Noto+Serif:ital@1&family=Outfit&family=Poppins&family=Sacramento&family=Vujahday+Script&display=swap');
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            background-color:#ebf1fa ;
+            border: 0;
+            border-radius: 4px;
+            
+        }
+
+        .submit-btn {
+            padding: 0.5rem 1rem;
+        }
+
+        option,
+        select {
+            width: max-content;
+            padding: 0.5rem 1rem;
+            margin: 10px 0;
+            background-color:#ebf1fa ;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 0.55rem 0.7rem;
+            font-size: 15px;
+            margin: 10px auto;
+            border-radius: 5px;
+            background-color: #ebf1fa;
+            border: none;
+            outline: none;
+            color: aliceblue;
+
+
+            background-image: linear-gradient(to right, #141e30e3, #243B55e3);
+        }
+
+        .submit-btn:hover {
+            background-image: linear-gradient(to right, #141E30, #243B55);
+            box-shadow: 1px 1px 8px 1.5px rgba(167, 166, 166, 0.848);
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="header">
+        <h2 class="hostel-title">Hostel Managemant System</h2>
+
+        <i class="fa-solid fa-bars " id="ham-menu"></i>
+        <ul id="nav-bar-links">
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Atendence</a>
+            </li>
+            <li>
+                <a href="#">Check-in-out</a>
+            </li>
+            <li>
+                <a href="#">Fees Payment</a>
+            </li>
+            <li>
+                <a href="#">Mess Menu</a>
+            </li>
+            <li>
+                <a href="#">Complaints</a>
+            </li>
+            <li>
+                <a href="#">Change Password</a>
+            </li>
+            <li>
+                <a href="#">Log out</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-main" style="height: calc(100vh - 81.5px);">
+
+        <div class="container-nav">
+
+
+            <ul class="login-link">
+              
+                <li>Check-in out</li>
+                <li>Fees payment</li>
+               <a href="/mess"><li>Mess menu</li></a> 
+               <a href="/complaint"><li>Complaint</li></a> 
+               <a href="/changepwd"><li>Change Password</li></a> 
+                <a href="/"><li>Log out</li></a>
+            </ul>
+        </div>
+        <div class="container-details" style="justify-content: center;
+                    align-items: center;">
+
+            <div class="student-photo-details" style="width: 45%; ">
+
+                <h4>Type your complaints here</h4>
+                <form class="contact-form" action="/complaint" method="post">
+
+                    <input type="text" name="Name" placeholder="Username" autocomplete="off" required>
+                    <input type="email" name="E-mail" placeholder="Your Email" autocomplete="off" required>
+                    <label for="reason">Complaint type:</label>
+
+                    <select name="reason" id="reason">
+                        <option value="">Choose reason</option>
+                        <option value="">Maintanance</option>
+                        <option value="">Clining</option>
+                        <option value="">Food</option>
+                        <option value="">Sports</optio>
+                        <option value="">Ragging</option>
+                        <option value="">Other..</option>
+                    </select>
+                    <textarea name="Message" rows="3" placeholder="Discription" autocomplete="off"></textarea>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <script>
+        document.querySelector(".pay-btn").addEventListener("click", function () {
+            alert("Your Fees Has Been Payed Successfully")
+
+        });
+
+        // nav bar script 
+//         let hamMenuIcon = document.getElementById("ham-menu");
+// let navBar = document.getElementById("nav-bar-links");
+// let navLinks = navBar.querySelectorAll("li");
+
+// hamMenuIcon.addEventListener("click", () => {
+//   navBar.classList.toggle("active");
+//   hamMenuIcon.classList.toggle("fa-times");
+// });
+// navLinks.forEach((navLinks) => {
+//   navLinks.addEventListener("click", () => {
+//     navBar.classList.remove("active");
+//     hamMenuIcon.classList.toggle("fa-times");
+//   });
+// });
+
+
+    </script>
+</body>
+
+</html>

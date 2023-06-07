@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Password</title>
+    <!-- link css  -->
+    <link rel="stylesheet" href="style/check-in-out.css" />
+
+    <!-- link boxicon  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- link font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <h2 class="hostel-title">Hostel Managemant System</h2>
+    </div>
+
+    <div class="container">
+      <div class="container-nav">
+        <ul class="login-link">
+          <li>Check-in out</li>
+          <li>Fees payment</li>
+          <a href="/mess">
+            <li>Mess menu</li>
+          </a>
+          <a href="/complaint">
+            <li>Complaint</li>
+          </a>
+          <a href="/changepwd">
+            <li>Change Password</li>
+          </a>
+          <a href="/">
+            <li>Log out</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="container-form">
+        <div class="container-form-inner">
+          <form action="/check" method="post">
+            <h3 class="apply">APPLY FOR GATE PASS:</h3>
+            <div class="undermain">
+              <div class="sidediv">
+                <label for="username">Username : </label>
+                <input type="text" name="username" id="username" required />
+              </div>
+            </div>
+            <div class="undermain">
+              <div class="sidediv">
+                
+                <label for="type">Select Type:</label>
+                <select name="type" id="type" required>
+                  <option value="">select</option>
+                  <option value="LEAVE">Leave</option>
+                  <option value="Gate-pass">Gate pass</option>
+                </select>
+              </div>
+              <div class="sidediv">
+                <label for="reason">Reason:</label>
+                <select name="reason" id="reason" required>
+                  <option value="">select</option>
+                  <option value="relative">Relative meeting</option>
+                  <option value="shopping">Shopping</option>
+                  <option value="college">College/coching</option>
+                  <option value="medical">Medical</option>
+                  <option value="saloon">Saloon</option>
+                  <option value="exam">Exam</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="undermain">
+              <div class="sidediv">
+                <label for="start-date">Start-date:</label>
+                <input type="date" name="Sdate" id="start-date" required />
+              </div>
+              <div class="sidediv">
+                <label for="end-date">End-date:</label>
+                <input type="date" name="Edate" id="end-date" required />
+              </div>
+            </div>
+            <div class="undermain">
+              <div class="sidediv">
+                <label for="intime">In-time:</label>
+                <input type="time" name="intime" required />
+              </div>
+              <div class="sidediv">
+                <label for="outtime">Out-time:</label>
+                <input type="time" name="outtime" id="outtime" required />
+              </div>
+            </div>
+            <div class="submit">
+              <button class="submit-btn">Apply</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

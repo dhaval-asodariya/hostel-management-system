@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- box icon link  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <section id="navbar">
+      <div class="navbar">
+        <div class="logo-img">
+          <img id="logo" src="image/home4.png" alt="Home stay" />
+        </div>
+
+        <div id="navlink-login" class="navlink-login">
+          <ul id="navlink" class="navlink">
+            <a class="navhover" href="/">
+              <li>Home</li>
+            </a>
+            <a class="navhover" href="#services">
+              <li>Services</li>
+            </a>
+            <a class="navhover" href="#hostel-life">
+              <li>Hostel life</li>
+            </a>
+            <a class="navhover" href="#reach-us">
+              <li>Reach us</li>
+            </a>
+          </ul>
+
+          <div class="login">
+            <div id="dropdown" class="dropdown">
+              <button
+                class="loginbtn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="bx bxs-lock-alt"></i>
+                Login
+              </button>
+              <div
+                id="dropdown-menu"
+                class="dropdown-menu"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <a
+                  style="color: aliceblue"
+                  onMouseOver="this.style.color ='#141E30'"
+                  onMouseOut="this.style.color='aliceblue'"
+                  class="dropdown-item"
+                  href="/Student"
+                  >Login as student</a
+                >
+                <a
+                  style="color: aliceblue"
+                  onMouseOver="this.style.color ='#141E30'"
+                  onMouseOut="this.style.color='aliceblue'"
+                  class="dropdown-item"
+                  href="/Admin"
+                  >Login as admin</a
+                >
+              </div>
+            </div>
+            <!-- <button class="loginbtn" type="button">Sign-in</button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero section starts -->
+    <section id="hero">
+      <div class="hero">
+        <div class="hero-left">
+          <span class="wellcome">Welcome to</span>
+          <h1>
+            Home-stay Hostel <br />
+            & guest house
+          </h1>
+          <h3>Feel the home <span>away from home</span></h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            tortor risus, hendrerit vel risus non, aliquet blandit quam.
+            Phasellus commodo ullamcorper arcu, sed consequat ante posuere et.
+            Integer sed ex metus.
+          </p>
+          <button class="button button-how">How to apply</button>
+          <button class="button button-apply">Apply now</button>
+        </div>
+        <div class="hero-right">
+          <!-- <img src="image/back.png" alt=""> -->
+          <img class="hostel-illu" src="image/hostel13.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- services section starts   -->
+    <section id="services">
+      <div class="services">
+        <h2 class="services-h2">Services</h2>
+        <div class="cards">
+          <div class="card" style="width: 17rem">
+            <img
+              class=""
+              src="image/sports.png"
+              width="130px"
+              height="210px"
+              alt="relax-bed"
+            />
+            <div class="card-body">
+              <h5 class="card-title">comfortable stay</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <!-- <button type="button" class="btn btn-outline-dark">Learn More</button> -->
+              <button
+                type="button"
+                class="btn xyz"
+                style="border: 1.5px solid #141e30"
+                onMouseOver="this.style.color ='aliceblue'"
+                onMouseOut="this.style.color='#141E30'"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 17rem">
+            <img
+              class=""
+              src="image/food.png"
+              width="130px"
+              height="210px"
+              alt="relax-bed"
+            />
+            <div class="card-body">
+              <h5 class="card-title">comfortable stay</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-color"
+                style="color: aliceblue"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 17rem">
+            <img
+              class=""
+              src="image/sports.png"
+              width="130px"
+              height="210px"
+              alt="relax-bed"
+            />
+            <div class="card-body">
+              <h5 class="card-title">comfortable stay</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-color"
+                style="color: aliceblue"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 17rem">
+            <img
+              class=""
+              src="image/bed.png"
+              width="130px"
+              height="210px"
+              alt="relax-bed"
+            />
+            <div class="card-body">
+              <h5 class="card-title">comfortable stay</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button
+                type="button"
+                class="btn btn-color"
+                style="color: aliceblue"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial section starts  -->
+    <section id="testimonial">
+      <div class="testimonial">
+        <h2 class="services-h2 testimonial-h2">Testimonials</h2>
+
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner" style="width: 60%">
+            <div class="carousel-item active">
+              <div
+                class="carousal-contant"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <!-- <img class="user-img" src="" alt="First slide"> -->
+                <i class="bx bx-user"></i>
+                <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Morbi tortor risus, hendrerit vel risus non, aliquet blandit
+                  quam. Phasellus commodo ullamcorper arcu, sed consequat ante
+                  posuere et. Integer sed ex metus."<i
+                    class="bx bxs-quote-alt-right"
+                  ></i>
+                </p>
+                <h4 class="name">Asodariya Dhaval</h4>
+                <span class="name-post">web developer</span>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div
+                class="carousal-contant"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <!-- <img class="user-img" src="" alt="First slide"> -->
+                <i class="bx bxs-user"></i>
+                <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Morbi tortor risus, hendrerit vel risus non, aliquet blandit
+                  quam. Phasellus commodo ullamcorper arcu, sed consequat ante
+                  posuere et. Integer sed ex metus."<i
+                    class="bx bxs-quote-alt-right"
+                  ></i>
+                </p>
+                <h4 class="name">Mahesh nanera</h4>
+                <span>web developer</span>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div
+                class="carousal-contant"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <!-- <img class="user-img" src="" alt="First slide"> -->
+                <i class="bx bx-user"></i>
+                <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Morbi tortor risus, hendrerit vel risus non, aliquet blandit
+                  quam. Phasellus commodo ullamcorper arcu, sed consequat ante
+                  posuere et. Integer sed ex metus."<i
+                    class="bx bxs-quote-alt-right"
+                  ></i>
+                </p>
+                <h5 class="name">Dimpal</h5>
+                <span>web developer</span>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div
+                class="carousal-contant"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                "
+              >
+                <!-- <img class="user-img" src="" alt="First slide"> -->
+                <i class="bx bxs-user"></i>
+                <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Morbi tortor risus, hendrerit vel risus non, aliquet blandit
+                  quam. Phasellus commodo ullamcorper arcu, sed consequat ante
+                  posuere et. Integer sed ex metus."<i
+                    class="bx bxs-quote-alt-right"
+                  ></i>
+                </p>
+                <h4 class="name">kesha</h4>
+                <span>web developer</span>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- hostel life section starts  -->
+    <section id="hostel-life">
+      <div class="hostel-life">
+        <h2 class="services-h2 hostel-life-h2">Hostel-life</h2>
+
+        <div>
+          <img class="hostel-img" src="image/hostel-life.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section starts> -->
+    <section id="reach-us">
+      <h2 class="services-h2 reach-us-h2">Reach us</h2>
+      <div class="reach-us">
+        <div class="contact-left">
+          <div class="contact-info">
+            <div class="reach">
+              <a href="Tel:9234567878"
+                ><i class="bx bx-phone-call" style="color: #aebdca"></i
+              ></a>
+
+              <div class="phone-no">
+                <span>Phone no :</span>
+                <span>+91 9234567878</span>
+              </div>
+            </div>
+
+            <div class="reach">
+              <a href="mailto:homestay07@gmail.com"
+                ><i class="bx bxl-gmail" style="color: #aebdca"></i
+              ></a>
+              <div class="phone-no">
+                <span>Email :</span>
+                <span>homestay07@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="reach">
+              <a href="6J6R+H5H, Sector 7, Gandhinagar, Gujarat 382007"
+                ><i class="bx bx-map" style="color: #aebdca"> </i
+              ></a>
+              <div class="phone-no">
+                <span>Address :</span>
+                <span
+                  >Home stay hostel & guest house sector 7, gandhinagar</span
+                >
+              </div>
+            </div>
+
+            <div class="reach">
+              <a href=""
+                ><i class="bx bx-time-five" style="color: #aebdca"></i
+              ></a>
+              <div class="phone-no">
+                <span>Office time :</span>
+                <span>10am to 06pm</span>
+              </div>
+            </div>
+          </div>
+          <div class="social-icon">
+            <div class="icon facebook"><i class="bx bxl-facebook"></i></div>
+            <div class="insta icon"><i class="bx bxl-instagram"></i></div>
+            <div class="twiter icon"><i class="bx bxl-twitter"></i></div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <h4>Type your message & feedback here</h4>
+          <form class="contact-form" action="contact-form" method="post">
+            <input
+              type="text"
+              name="Name"
+              placeholder="Your Name"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="email"
+              name="Email"
+              placeholder="Your Email"
+              autocomplete="off"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your message"
+              autocomplete="off"
+            ></textarea>
+            <button class="submit button button-apply" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- copyright section  -->
+    <section class="copyright">
+      <div class="copy">
+        <p><i class="bx bx-copyright"></i>All copyrights resereved.</p>
+      </div>
+    </section>
+
+    <a href="#hero"><i id="scroll-btn" class="bx bxs-upvote"></i></a>
+
+    <!-- bootstrap js  -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- link data.js  -->
+    <script src="script/data.js"></script>
+  </body>
+</html>
